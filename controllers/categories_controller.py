@@ -10,6 +10,8 @@ class CategoriesWidget(QWidget, Ui_Form):
         self.button_save.clicked.connect(self.save_category)
         self.load_categories()
 
+        self.table_categories.doubleClicked.connect(self.get_data_row)
+
     def save_category(self):
         category = self.name_line_edit.text()
         description = self.description_line_edit.text()
@@ -36,6 +38,9 @@ class CategoriesWidget(QWidget, Ui_Form):
             self.table_categories.setItem(row_idx, 0, QTableWidgetItem(str(cat['id'])))
             self.table_categories.setItem(row_idx, 1, QTableWidgetItem(cat['category']))
             self.table_categories.setItem(row_idx, 2, QTableWidgetItem(cat['description']))
+
+    def get_data_row(self):
+        pass
 
     def clear_form(self):
         self.name_line_edit.clear()

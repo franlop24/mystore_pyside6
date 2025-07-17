@@ -16,20 +16,20 @@
   <widget class="QTableWidget" name="table_categories">
    <property name="geometry">
     <rect>
-     <x>115</x>
-     <y>140</y>
+     <x>110</x>
+     <y>170</y>
      <width>581</width>
      <height>192</height>
     </rect>
    </property>
   </widget>
-  <widget class="QWidget" name="">
+  <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
      <x>120</x>
      <y>0</y>
      <width>571</width>
-     <height>118</height>
+     <height>157</height>
     </rect>
    </property>
    <layout class="QVBoxLayout" name="verticalLayout">
@@ -70,6 +70,24 @@
        <string>Guardar</string>
       </property>
      </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <item>
+       <widget class="QPushButton" name="button_update">
+        <property name="text">
+         <string>Actualizar</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="button_delete">
+        <property name="text">
+         <string>Eliminar</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
     </item>
    </layout>
   </widget>

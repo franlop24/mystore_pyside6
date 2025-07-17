@@ -25,6 +25,9 @@
     </property>
     <widget class="QWidget" name="page01"/>
     <widget class="QWidget" name="page02"/>
+    <widget class="QWidget" name="page03"/>
+    <widget class="QWidget" name="page04"/>
+    <widget class="QWidget" name="page05"/>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
@@ -33,7 +36,7 @@
      <x>0</x>
      <y>0</y>
      <width>800</width>
-     <height>22</height>
+     <height>24</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuArchivo">
@@ -49,13 +52,31 @@
     <addaction name="actionCategorias"/>
     <addaction name="actionProductos"/>
    </widget>
+   <widget class="QMenu" name="menuVentas">
+    <property name="title">
+     <string>Ventas</string>
+    </property>
+    <addaction name="actionAgregar_Venta"/>
+    <addaction name="actionMostrar_Ventas"/>
+   </widget>
+   <widget class="QMenu" name="menuAyuda">
+    <property name="title">
+     <string>Ayuda</string>
+    </property>
+    <addaction name="actionAyuda"/>
+   </widget>
    <addaction name="menuArchivo"/>
    <addaction name="menuProductos"/>
+   <addaction name="menuVentas"/>
+   <addaction name="menuAyuda"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
   <action name="actionSalir">
    <property name="text">
     <string>Salir</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+X</string>
    </property>
   </action>
   <action name="actionCategorias">
@@ -66,6 +87,21 @@
   <action name="actionProductos">
    <property name="text">
     <string>Productos</string>
+   </property>
+  </action>
+  <action name="actionAgregar_Venta">
+   <property name="text">
+    <string>Agregar Venta</string>
+   </property>
+  </action>
+  <action name="actionMostrar_Ventas">
+   <property name="text">
+    <string>Mostrar Ventas</string>
+   </property>
+  </action>
+  <action name="actionAyuda">
+   <property name="text">
+    <string>Ayuda</string>
    </property>
   </action>
  </widget>
