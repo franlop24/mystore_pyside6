@@ -8,6 +8,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         self.setupUi(self)
 
         self.setWindowTitle('Mi Tienda')
+        self.resize(960, 540)
         
         self.categories_widget = CategoriesWidget()
         self.stackedWidget.insertWidget(0, self.categories_widget)
