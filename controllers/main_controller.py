@@ -1,6 +1,7 @@
 from PySide6.QtWidgets import QMainWindow, QLabel
 from ui.ui_main import Ui_MainWindow
 from controllers.categories_controller import CategoriesWidget
+from controllers.products_controller import ProductsWidget
 
 class MainWindow(QMainWindow, Ui_MainWindow):
     def __init__(self):
@@ -15,7 +16,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         self.stackedWidget.setCurrentIndex(0)
         
         home_page = QLabel('Home Page')
-        products_Page = QLabel('Products Page')
+        products_Page = ProductsWidget()
         ventas_page = QLabel('Ventas Nuevas Page')
         show_ventas_page = QLabel('Mostrar Ventas Page')
         

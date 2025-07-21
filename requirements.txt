@@ -1,3 +1,4 @@
 pyside6
 pymysql
 sqlalchemy
+qt_material
