@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'products_formiVSHsh.ui'
+## Form generated from reading UI file 'products_formVWOOca.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.9.1
 ##
@@ -142,21 +142,21 @@ class Ui_ProductsForm(object):
         self.products_stacked_widget.addWidget(self.page)
         self.page_2 = QWidget()
         self.page_2.setObjectName(u"page_2")
-        self.widget = QWidget(self.page_2)
-        self.widget.setObjectName(u"widget")
-        self.widget.setGeometry(QRect(38, 20, 611, 341))
-        self.verticalLayout_2 = QVBoxLayout(self.widget)
+        self.layoutWidget1 = QWidget(self.page_2)
+        self.layoutWidget1.setObjectName(u"layoutWidget1")
+        self.layoutWidget1.setGeometry(QRect(38, 20, 611, 341))
+        self.verticalLayout_2 = QVBoxLayout(self.layoutWidget1)
         self.verticalLayout_2.setObjectName(u"verticalLayout_2")
         self.verticalLayout_2.setContentsMargins(0, 0, 0, 0)
         self.horizontalLayout_7 = QHBoxLayout()
         self.horizontalLayout_7.setSpacing(20)
         self.horizontalLayout_7.setObjectName(u"horizontalLayout_7")
-        self.label_6 = QLabel(self.widget)
+        self.label_6 = QLabel(self.layoutWidget1)
         self.label_6.setObjectName(u"label_6")
 
         self.horizontalLayout_7.addWidget(self.label_6)
 
-        self.search_by_id_line_edit = QLineEdit(self.widget)
+        self.search_by_id_line_edit = QLineEdit(self.layoutWidget1)
         self.search_by_id_line_edit.setObjectName(u"search_by_id_line_edit")
 
         self.horizontalLayout_7.addWidget(self.search_by_id_line_edit)
@@ -166,12 +166,12 @@ class Ui_ProductsForm(object):
 
         self.horizontalLayout_8 = QHBoxLayout()
         self.horizontalLayout_8.setObjectName(u"horizontalLayout_8")
-        self.label_7 = QLabel(self.widget)
+        self.label_7 = QLabel(self.layoutWidget1)
         self.label_7.setObjectName(u"label_7")
 
         self.horizontalLayout_8.addWidget(self.label_7)
 
-        self.search_by_category_combo = QComboBox(self.widget)
+        self.search_by_category_combo = QComboBox(self.layoutWidget1)
         self.search_by_category_combo.setObjectName(u"search_by_category_combo")
 
         self.horizontalLayout_8.addWidget(self.search_by_category_combo)
@@ -181,12 +181,12 @@ class Ui_ProductsForm(object):
 
         self.horizontalLayout_9 = QHBoxLayout()
         self.horizontalLayout_9.setObjectName(u"horizontalLayout_9")
-        self.label_8 = QLabel(self.widget)
+        self.label_8 = QLabel(self.layoutWidget1)
         self.label_8.setObjectName(u"label_8")
 
         self.horizontalLayout_9.addWidget(self.label_8)
 
-        self.search_by_name_line_edit = QLineEdit(self.widget)
+        self.search_by_name_line_edit = QLineEdit(self.layoutWidget1)
         self.search_by_name_line_edit.setObjectName(u"search_by_name_line_edit")
 
         self.horizontalLayout_9.addWidget(self.search_by_name_line_edit)
@@ -196,12 +196,12 @@ class Ui_ProductsForm(object):
 
         self.horizontalLayout_10 = QHBoxLayout()
         self.horizontalLayout_10.setObjectName(u"horizontalLayout_10")
-        self.refresh_table_button = QPushButton(self.widget)
+        self.refresh_table_button = QPushButton(self.layoutWidget1)
         self.refresh_table_button.setObjectName(u"refresh_table_button")
 
         self.horizontalLayout_10.addWidget(self.refresh_table_button)
 
-        self.new_product_button = QPushButton(self.widget)
+        self.new_product_button = QPushButton(self.layoutWidget1)
         self.new_product_button.setObjectName(u"new_product_button")
 
         self.horizontalLayout_10.addWidget(self.new_product_button)
@@ -209,7 +209,7 @@ class Ui_ProductsForm(object):
 
         self.verticalLayout_2.addLayout(self.horizontalLayout_10)
 
-        self.products_table = QTableWidget(self.widget)
+        self.products_table = QTableWidget(self.layoutWidget1)
         self.products_table.setObjectName(u"products_table")
 
         self.verticalLayout_2.addWidget(self.products_table)

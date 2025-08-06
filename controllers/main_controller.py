@@ -2,6 +2,11 @@ from PySide6.QtWidgets import QMainWindow, QLabel
 from ui.ui_main import Ui_MainWindow
 from controllers.categories_controller import CategoriesWidget
 from controllers.products_controller import ProductsWidget
+from pathlib import Path
+
+def absPath(file):
+    return str(Path(__file__).parent.absolute() / file)
+
 
 class MainWindow(QMainWindow, Ui_MainWindow):
     def __init__(self):
@@ -30,6 +35,20 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         self.actionProductos.triggered.connect(self.show_products_page)
         self.actionAgregar_Venta.triggered.connect(self.show_ventas_add_page)
         self.actionMostrar_Ventas.triggered.connect(self.show_ventas_page)
+
+    # cargamos los estilos del fichero
+        self.cargarQSS("../qss/Ctor.qss")
+
+    def cargarQSS(self, file):
+        # guardamos la ruta absoluta al fichero
+        path = absPath(file)
+        # intentamos abrirlo y volcar el contenido
+        try:
+            with open(path) as styles:
+                self.setStyleSheet(styles.read())
+        # si hay algún fallo lo capturamos con una excepción genérica
+        except:
+            print("Error abriendo estilos", path)
 
     def show_categories_page(self):
         self.stackedWidget.setCurrentIndex(0)
