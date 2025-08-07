@@ -2,6 +2,7 @@ from PySide6.QtWidgets import QMainWindow, QLabel
 from ui.ui_main import Ui_MainWindow
 from controllers.categories_controller import CategoriesWidget
 from controllers.products_controller import ProductsWidget
+from controllers.sales_controller import SalesWidget
 from pathlib import Path
 
 def absPath(file):
@@ -22,7 +23,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         
         home_page = QLabel('Home Page')
         products_Page = ProductsWidget()
-        ventas_page = QLabel('Ventas Nuevas Page')
+        ventas_page = SalesWidget()
         show_ventas_page = QLabel('Mostrar Ventas Page')
         
         self.stackedWidget.insertWidget(1, home_page)
@@ -37,7 +38,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         self.actionMostrar_Ventas.triggered.connect(self.show_ventas_page)
 
     # cargamos los estilos del fichero
-        self.cargarQSS("../qss/Ctor.qss")
+        self.cargarQSS("qss/NeonButtons.qss")
 
     def cargarQSS(self, file):
         # guardamos la ruta absoluta al fichero
